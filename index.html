@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.min.js"></script>
+    <title>Arrays Repaso</title>
+</head>
+
+<body class="bg-black text-white">
+    <div class="container">
+
+        <!-- Menú -->
+        <nav class="container row mt-2">
+            <h1 class="col-12 col-md-10">Ejercicios</h1>
+            <div class="col-12 col-md-2">
+                <a class="btn text-white" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
+                    Enunciados
+                </a>
+            </div>
+        </nav>
+        <!-- // End menu -->
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Enunciados</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <ol>
+                        <li>
+                            Crea un array de 10 posiciones de números con valores pedidos por teclado. Muestra por
+                            consola el indice y el valor al que corresponde. Haz dos funciones, uno para rellenar
+                            valores y otro para mostrar.
+                        </li>
+                        <li>
+                            Crea un array de números donde le indicamos por teclado el tamaño del array, rellenaremos el
+                            array con números aleatorios entre 0 y 9, al final muestra por pantalla el valor de cada
+                            posición y la suma de todos los valores. Haz una función para rellenar el array (que tenga
+                            como parámetros los números entre los que tenga que generar), otra función para mostrar el
+                            contenido y la suma del array y una función para generar número aleatorio (lo puedes usar
+                            para otros ejercicios).
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="articles bg-white text-dark">
+            <article class="p-5">
+                <h2>Ejercicio 1</h2>
+                <div class="alert alert-danger" role="alert">
+                    Recuerda el mensaje por consola. El programa se inicia al hacer click en el botón.
+                </div>
+                <button id="btn-ej1" class="btn btn-primary">Iniciar</button>
+            </article>
+
+            <article class="p-5">
+                <h2>Ejercicio 2</h2>
+                <div class="alert alert-info" role="alert">
+                    <code>
+                        Math.round(Math.random() * (max - min) + min);
+                    </code>
+                </div>
+                <div class="m-3">
+                    <div class="form-floating">
+                        <input placeholder="Tamaño Array" type="number" class="form-control" id="tam2" value="0" min="0" max="100">
+                        <label for="tam2">Tamaño Array</label>
+                    </div>
+                    <input type="range" class="form-range" id="range-ej2" value="0">
+                    <div class="result-2 alert bg-primary text-white" style="word-wrap: break-word;">
+                        [] <span class="badge text-bg-secondary">0</span>
+                    </div>
+                </div>
+                <button id="btn-ej2" class="btn btn-primary">Iniciar</button>
+            </article>
+        </div>
+
+    </div>
+    <script src="js/ej1.js"></script>
+    <script src="js/ej2.js"></script>
+</body>
+
+</html>
